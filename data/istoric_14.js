@@ -1,0 +1,1 @@
+var json_istoric_14 = {"type":"FeatureCollection","name":"istoric_14","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1","id":"node/13460600349","@id":"node/13460600349","historic":"memorial","memorial":"war_memorial"},"geometry":{"type":"MultiPoint","coordinates":[[28.9388146,46.9843643]]}}]}
