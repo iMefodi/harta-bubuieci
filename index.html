@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WebGIS Bubuieci — portret complet al satului</title>
-  <meta name="description" content="Portal WebGIS al satului Bubuieci (mun. Chișinău): poveste vizuală, hărți interactive și hărți tematice realizate cu QGIS, OpenStreetMap și date cadastrale.">
+  <meta name="description" content="Portal WebGIS al satului Bubuieci (mun. Chișinău): poveste vizuală, hărți interactive, grafice și hărți tematice realizate cu QGIS, OpenStreetMap și date cadastrale.">
   <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230071e3'/%3E%3Cpath d='M16 7c-3.6 0-6.5 2.8-6.5 6.3 0 4.7 6.5 11.7 6.5 11.7s6.5-7 6.5-11.7C22.5 9.8 19.6 7 16 7zm0 8.8a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z' fill='%23fff'/%3E%3C/svg%3E">
@@ -24,10 +24,11 @@
     </a>
     <ul class="menu" id="menu">
       <li><a href="#povestea" data-i18n="nav.story">Povestea</a></li>
+      <li><a href="#grafice" data-i18n="nav.charts">Grafice</a></li>
+      <li><a href="#galerie" data-i18n="nav.gallery">Galerie</a></li>
       <li><a href="#harti" data-i18n="nav.maps">Hărți interactive</a></li>
-      <li><a href="#date" data-i18n="nav.data">Date</a></li>
-      <li><a href="#lucrari" data-i18n="nav.labs">Lucrări</a></li>
-      <li><a href="#linkuri" data-i18n="nav.links">Linkuri utile</a></li>
+      <li><a href="#descarca" data-i18n="nav.data">Descarcă fișiere</a></li>
+      <li><a href="#proiecte" data-i18n="nav.labs">Proiecte</a></li>
       <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
     <div class="lang" role="group" aria-label="Limba / Language">
@@ -54,9 +55,10 @@
         <a class="btn ghost" href="#harti" data-i18n="hero.cta2">Deschide harta ›</a>
       </div>
     </div>
-    <div class="hero-img reveal">
-      <img src="assets/img/03_fondul_construit_harta.jpg" alt="Harta fondului construit din centrul satului Bubuieci" data-i18n-alt="hero.alt" fetchpriority="high">
-    </div>
+    <figure class="hero-img reveal">
+      <img src="assets/foto/primaria.jpg" alt="Primăria comunei Bubuieci, august 2025" data-i18n-alt="hero.alt" fetchpriority="high">
+      <figcaption data-i18n="hero.cap">Primăria comunei Bubuieci, august 2025 · Foto: VictorCiobanu, CC0</figcaption>
+    </figure>
   </div>
 </header>
 
@@ -66,24 +68,24 @@
     <a class="card reveal" href="#povestea">
       <div class="ico" style="background:#f56300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg></div>
       <h3 data-i18n="card1.t">Povestea Bubuieci</h3>
-      <p data-i18n="card1.d">Cinci capitole, cinci hărți tematice și cifrele care descriu satul.</p>
+      <p data-i18n="card1.d">Cinci capitole cu hărți tematice, fotografii, grafice și o cronologie a satului.</p>
       <span class="more" data-i18n="more">Află mai mult ›</span>
     </a>
     <a class="card reveal" href="#harti">
       <div class="ico" style="background:#0071e3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4z"/><path d="M8 2v16M16 6v16"/></svg></div>
       <h3 data-i18n="card2.t">Hărți interactive</h3>
-      <p data-i18n="card2.d">Explorează stratele cu zoom, căutare și ferestre de informații.</p>
+      <p data-i18n="card2.d">Explorează straturile cu zoom, căutare și ferestre de informații.</p>
       <span class="more" data-i18n="more">Află mai mult ›</span>
     </a>
-    <a class="card reveal" href="#date">
+    <a class="card reveal" href="#descarca">
       <div class="ico" style="background:#1a9e6f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></div>
-      <h3 data-i18n="card3.t">Hărți de descărcat</h3>
+      <h3 data-i18n="card3.t">Descarcă fișiere</h3>
       <p data-i18n="card3.d">Hărțile tematice în format PNG, 200 dpi, gata de tipar.</p>
       <span class="more" data-i18n="more">Află mai mult ›</span>
     </a>
-    <a class="card reveal" href="#lucrari">
+    <a class="card reveal" href="#proiecte">
       <div class="ico" style="background:#8e44ad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-      <h3 data-i18n="card4.t">Jurnalul proiectului</h3>
+      <h3 data-i18n="card4.t">Proiecte</h3>
       <p data-i18n="card4.d">Cele șapte lucrări de laborator PBL, pas cu pas.</p>
       <span class="more" data-i18n="more">Află mai mult ›</span>
     </a>
@@ -103,6 +105,7 @@
       <div class="stat reveal"><b>109</b><span data-i18n="stats.4">puncte de interes</span></div>
       <div class="stat reveal"><b>258 km</b><span data-i18n="stats.5">de drumuri</span></div>
     </div>
+    <p class="source" data-i18n="stats.src">Surse: populația — BNS (atributele stratului AOI, lucrarea 2); suprafața și lungimile — calcul SIG în QGIS; clădirile — cadastrul, sectorul 0142; punctele de interes și drumurile — OpenStreetMap, 2026.</p>
   </div>
 </section>
 
@@ -112,11 +115,23 @@
     <div class="head reveal">
       <h2 data-i18n="story.h">Povestea Bubuieci. <span>În cinci hărți.</span></h2>
       <div class="accent-line"></div>
-      <p data-i18n="story.p">O analiză SIG bazată pe date deschise (OpenStreetMap) și oficiale (cadastru), accesibilă oricui — pentru locuitori, autorități locale, investitori și studenți.</p>
+      <p data-i18n="story.p">Introducere, cinci capitole și concluzii — o poveste vizuală construită pe date SIG deschise și oficiale.</p>
+    </div>
+
+    <!-- 5.1: scop, mesaj, public-tinta -->
+    <div class="purpose">
+      <div class="reveal"><span class="k" data-i18n="p.goal.k">Scop</span><p data-i18n="p.goal">Să prezentăm satul Bubuieci printr-o analiză SIG a teritoriului, clădirilor, serviciilor și rețelelor, accesibilă oricui.</p></div>
+      <div class="reveal"><span class="k" data-i18n="p.msg.k">Mesajul principal</span><p data-i18n="p.msg">Bubuieci este un sat agricol ca teritoriu, dar suburban ca mod de viață — și crește an de an.</p></div>
+      <div class="reveal"><span class="k" data-i18n="p.aud.k">Public-țintă</span><p data-i18n="p.aud">Locuitorii satului, primăria și autoritățile locale, investitorii și studenții în geodezie și SIG.</p></div>
+      <div class="reveal"><span class="k" data-i18n="p.data.k">Date și instrumente</span><p data-i18n="p.data">OpenStreetMap, cadastrul (sectorul 0142), CORINE Land Cover, INDS · QGIS, qgis2web, Leaflet.</p></div>
     </div>
 
     <article class="chapter reveal">
       <div class="ch-text">
+        <figure class="ch-photo" data-full="assets/foto/biserica_adormirea.jpg" data-cap="ph.adormirea">
+          <img src="assets/foto/biserica_adormirea.jpg" alt="Biserica Adormirea Maicii Domnului din Bubuieci" loading="lazy">
+          <figcaption data-i18n="ph.adormirea">Biserica „Adormirea Maicii Domnului”, 2025 · Foto: VictorCiobanu, CC0</figcaption>
+        </figure>
         <div class="ch-num" data-i18n="c1.n">Capitolul 1 · Localizare</div>
         <h3 data-i18n="c1.t">De ce Bubuieci?</h3>
         <p data-i18n="c1.p1">Bubuieci este un sat din componența municipiului Chișinău, situat la sud-est de oraș, pe malul stâng al râului Bâc. Aici locuiesc <strong>7 617 oameni</strong> (3 707 bărbați și 3 910 femei) pe <strong>2 770 ha</strong> — aproximativ <strong>275 locuitori/km²</strong>.</p>
@@ -124,26 +139,33 @@
       </div>
       <div class="ch-img" data-full="assets/img/01_localizare.jpg" data-png="assets/harti/01_localizare.png" data-cap="c1.t">
         <img src="assets/img/01_localizare_harta.jpg" alt="Harta de localizare a satului Bubuieci" loading="lazy">
-        <span class="zoom" data-i18n="zoom">Mărește ⤢</span>
+        <span class="zoom" data-i18n="zoom">Mărește harta ⤢</span>
       </div>
     </article>
 
     <article class="chapter rev reveal">
       <div class="ch-text">
+        <figure class="ch-photo" data-full="assets/foto/camp_combina.jpg" data-cap="ph.camp">
+          <img src="assets/foto/camp_combina.jpg" alt="Combină agricolă pe un câmp din Bubuieci" loading="lazy">
+          <figcaption data-i18n="ph.camp">Câmp agricol la marginea satului, 2011 · Foto: Alexander Murvanidze, CC BY-SA 3.0</figcaption>
+        </figure>
         <div class="ch-num" data-i18n="c2.n">Capitolul 2 · Utilizarea terenurilor</div>
         <h3 data-i18n="c2.t">Un sat al câmpurilor</h3>
         <p data-i18n="c2.p1">Jumătate din teritoriu este teren agricol: <strong>1 385 ha de teren arabil (50 %)</strong>, plus 176 ha de loturi și grădini, 108 ha de livezi și 15 ha de vii. Zona rezidențială ocupă <strong>584 ha (21 %)</strong>, iar pădurile „Bubuieci” și „Humulești” — <strong>233 ha (8 %)</strong>.</p>
         <p data-i18n="c2.p2">La vest, de-a lungul Bâcului, se află zona industrială și stația de epurare a municipiului — cea mai mare suprafață de apă din sat (12 ha de bazine).</p>
-        <div class="callout" data-i18n="c2.call">CORINE Land Cover confirmă: teren arabil 47 %, țesut urban discontinuu 23 %, pășuni 13 %, păduri 8 %.</div>
       </div>
       <div class="ch-img" data-full="assets/img/02_utilizarea_terenurilor.jpg" data-png="assets/harti/02_utilizarea_terenurilor.png" data-cap="c2.t">
         <img src="assets/img/02_utilizarea_terenurilor_harta.jpg" alt="Harta utilizării terenurilor" loading="lazy">
-        <span class="zoom" data-i18n="zoom">Mărește ⤢</span>
+        <span class="zoom" data-i18n="zoom">Mărește harta ⤢</span>
       </div>
     </article>
 
     <article class="chapter reveal">
       <div class="ch-text">
+        <figure class="ch-photo" data-full="assets/foto/strada_bubuiog.jpg" data-cap="ph.strada">
+          <img src="assets/foto/strada_bubuiog.jpg" alt="Strada Toader Bubuiog, aprilie 2021" loading="lazy">
+          <figcaption data-i18n="ph.strada">Strada Toader Bubuiog, aprilie 2021 · Foto: Gikü, CC0</figcaption>
+        </figure>
         <div class="ch-num" data-i18n="c3.n">Capitolul 3 · Fondul construit</div>
         <h3 data-i18n="c3.t">Casă lângă casă</h3>
         <p data-i18n="c3.p1">Registrul cadastral conține <strong>5 868 clădiri</strong> și <strong>10 165 terenuri</strong>:</p>
@@ -153,17 +175,21 @@
           <li><strong>125 clădiri publice și comerciale</strong> — liceu, grădiniță, primărie, magazine</li>
           <li><strong>103 clădiri de producție și depozite</strong></li>
         </ul>
-        <p data-i18n="c3.p2">Clădirile ocupă doar <strong>1,7 %</strong> din teritoriu, iar parcela tipică are <strong>730 m²</strong>. Satul crește: modificările cadastrale au urcat de la 24 în 2017 la <strong>159 în 2025</strong>.</p>
+        <p data-i18n="c3.p2">Clădirile ocupă doar <strong>1,7 %</strong> din teritoriu, iar parcela tipică are <strong>730 m²</strong>. Satul crește: vezi graficul înregistrărilor cadastrale din cronologie.</p>
         <div class="callout" data-i18n="c3.call">OpenStreetMap cartografiază doar 851 de clădiri — 15 % din cele reale. Datele oficiale sunt indispensabile.</div>
       </div>
       <div class="ch-img" data-full="assets/img/03_fondul_construit.jpg" data-png="assets/harti/03_fondul_construit.png" data-cap="c3.t">
         <img src="assets/img/03_fondul_construit_harta.jpg" alt="Harta fondului construit după cadastru" loading="lazy">
-        <span class="zoom" data-i18n="zoom">Mărește ⤢</span>
+        <span class="zoom" data-i18n="zoom">Mărește harta ⤢</span>
       </div>
     </article>
 
     <article class="chapter rev reveal">
       <div class="ch-text">
+        <figure class="ch-photo" data-full="assets/foto/centru.jpg" data-cap="ph.centru">
+          <img src="assets/foto/centru.jpg" alt="Centrul satului Bubuieci cu magazine" loading="lazy">
+          <figcaption data-i18n="ph.centru">Centrul comercial al satului, 2011 · Foto: Alexander Murvanidze, CC BY-SA 3.0</figcaption>
+        </figure>
         <div class="ch-num" data-i18n="c4.n">Capitolul 4 · Servicii și transport</div>
         <h3 data-i18n="c4.t">Viața de zi cu zi</h3>
         <p data-i18n="c4.p1">Centrul satului, în jurul străzii Toader Bubuiog, adună majoritatea celor <strong>109 puncte de interes</strong>:</p>
@@ -173,16 +199,20 @@
           <li>8 service-uri auto, 5 cafenele, oficiu poștal, poliție, bibliotecă</li>
           <li><strong>15 locuri de joacă</strong>, 9 terenuri de sport, 7 piscine</li>
         </ul>
-        <p data-i18n="c4.p2">Legătura cu orașul: <strong>49 de stații de autobuz</strong> de-a lungul arterelor principale.</p>
+        <p data-i18n="c4.p2">Legătura cu orașul: <strong>49 de stații de autobuz</strong> de-a lungul arterelor principale. În centru, un monument îi comemorează pe eroii satului căzuți în al Doilea Război Mondial.</p>
       </div>
       <div class="ch-img" data-full="assets/img/04_servicii_transport.jpg" data-png="assets/harti/04_servicii_transport.png" data-cap="c4.t">
         <img src="assets/img/04_servicii_transport_harta.jpg" alt="Harta serviciilor și transportului public" loading="lazy">
-        <span class="zoom" data-i18n="zoom">Mărește ⤢</span>
+        <span class="zoom" data-i18n="zoom">Mărește harta ⤢</span>
       </div>
     </article>
 
     <article class="chapter reveal">
       <div class="ch-text">
+        <figure class="ch-photo" data-full="assets/foto/drum_linie_electrica.jpg" data-cap="ph.drum">
+          <img src="assets/foto/drum_linie_electrica.jpg" alt="Drum cu linie electrică la marginea satului" loading="lazy">
+          <figcaption data-i18n="ph.drum">Drum și linie electrică spre câmpuri, 2011 · Foto: Alexander Murvanidze, CC BY-SA 3.0</figcaption>
+        </figure>
         <div class="ch-num" data-i18n="c5.n">Capitolul 5 · Infrastructura</div>
         <h3 data-i18n="c5.t">Rețelele care țin satul în viață</h3>
         <ul data-i18n="c5.list">
@@ -193,11 +223,111 @@
       </div>
       <div class="ch-img" data-full="assets/img/05_infrastructura.jpg" data-png="assets/harti/05_infrastructura.png" data-cap="c5.t">
         <img src="assets/img/05_infrastructura_harta.jpg" alt="Harta infrastructurii tehnico-edilitare" loading="lazy">
-        <span class="zoom" data-i18n="zoom">Mărește ⤢</span>
+        <span class="zoom" data-i18n="zoom">Mărește harta ⤢</span>
       </div>
     </article>
+  </div>
+</section>
 
-    <div class="head reveal" style="margin-top:64px">
+<!-- ============ GRAFICE SI DIAGRAME ============ -->
+<section class="block" id="grafice">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2 data-i18n="g.h">Datele din spatele poveștii. <span>Grafice și diagrame.</span></h2>
+      <div class="accent-line"></div>
+    </div>
+    <div class="charts">
+
+      <figure class="chart reveal">
+        <h3 data-i18n="g1.t">Utilizarea terenurilor</h3>
+        <p class="sub" data-i18n="g1.sub">hectare · % din suprafața satului</p>
+        <div class="hbars">
+          <div class="hb"><span data-i18n="g1.a">Teren arabil</span><div class="tr"><i style="width:100%;--c:#e0b93b"></i></div><b>1 385 · 50 %</b></div>
+          <div class="hb"><span data-i18n="g1.b">Zonă rezidențială</span><div class="tr"><i style="width:42.1%;--c:#9aa0a6"></i></div><b>584 · 21 %</b></div>
+          <div class="hb"><span data-i18n="g1.c">Păduri</span><div class="tr"><i style="width:16.8%;--c:#34a853"></i></div><b>233 · 8 %</b></div>
+          <div class="hb"><span data-i18n="g1.d">Loturi și grădini</span><div class="tr"><i style="width:12.7%;--c:#a8d08d"></i></div><b>176 · 6 %</b></div>
+          <div class="hb"><span data-i18n="g1.e">Pajiști</span><div class="tr"><i style="width:12.5%;--c:#c5e1a5"></i></div><b>174 · 6 %</b></div>
+          <div class="hb"><span data-i18n="g1.f">Livezi și vii</span><div class="tr"><i style="width:8.9%;--c:#7cb342"></i></div><b>123 · 4 %</b></div>
+          <div class="hb"><span data-i18n="g1.g">Industrie și comerț</span><div class="tr"><i style="width:8.3%;--c:#b08968"></i></div><b>115 · 4 %</b></div>
+        </div>
+        <figcaption data-i18n="g1.src">Sursa: OpenStreetMap (landuse), decupat pe AOI, calcul QGIS.</figcaption>
+      </figure>
+
+      <figure class="chart reveal">
+        <h3 data-i18n="g2.t">Clădirile după destinație</h3>
+        <p class="sub" data-i18n="g2.sub">5 868 clădiri din registrul cadastral</p>
+        <div class="donut-wrap">
+          <div class="donut" style="background:conic-gradient(#f2a65a 0 65.39%, #b8b8b8 65.39% 95.08%, #e31a1c 95.08% 97.21%, #6a3d9a 97.21% 98.97%, #dddddd 98.97% 100%)"><span><b>65 %</b><small data-i18n="g2.center">locuințe</small></span></div>
+          <ul class="legend">
+            <li><i style="--c:#f2a65a"></i><span data-i18n="g2.a">Locuințe</span><b>3 837</b></li>
+            <li><i style="--c:#b8b8b8"></i><span data-i18n="g2.b">Anexe gospodărești</span><b>1 742</b></li>
+            <li><i style="--c:#e31a1c"></i><span data-i18n="g2.c">Publice / comerciale</span><b>125</b></li>
+            <li><i style="--c:#6a3d9a"></i><span data-i18n="g2.d">Producere / depozite</span><b>103</b></li>
+            <li><i style="--c:#dddddd"></i><span data-i18n="g2.e">Nespecificat</span><b>61</b></li>
+          </ul>
+        </div>
+        <figcaption data-i18n="g2.src">Sursa: cadastrul, sectorul 0142 (câmpul „destinație funcțională”, grupat).</figcaption>
+      </figure>
+
+      <figure class="chart reveal">
+        <h3 data-i18n="g3.t">Date deschise vs. date oficiale</h3>
+        <p class="sub" data-i18n="g3.sub">OpenStreetMap comparat cu cadastrul</p>
+        <div class="vs">
+          <p class="vs-k" data-i18n="g3.a">Număr de clădiri</p>
+          <div class="hb"><span>OSM</span><div class="tr"><i style="width:14.5%;--c:#7ebc6f"></i></div><b>851</b></div>
+          <div class="hb"><span data-i18n="g3.cad">Cadastru</span><div class="tr"><i style="width:100%;--c:#0071e3"></i></div><b>5 868</b></div>
+          <p class="vs-k" data-i18n="g3.b">Suprafață construită</p>
+          <div class="hb"><span>OSM</span><div class="tr"><i style="width:34%;--c:#7ebc6f"></i></div><b>16,4 ha</b></div>
+          <div class="hb"><span data-i18n="g3.cad">Cadastru</span><div class="tr"><i style="width:100%;--c:#0071e3"></i></div><b>48,2 ha</b></div>
+        </div>
+        <figcaption data-i18n="g3.src">OSM acoperă 15 % din clădiri și 34 % din suprafața construită. Surse: OSM 2026, cadastru.</figcaption>
+      </figure>
+
+      <figure class="chart reveal">
+        <h3 data-i18n="g4.t">Același teritoriu, altă sursă</h3>
+        <p class="sub" data-i18n="g4.sub">CORINE Land Cover · % din suprafața satului</p>
+        <div class="stack">
+          <i style="width:47.3%;--c:#ffe64d" title="47,3 %"></i><i style="width:22.7%;--c:#e6004d" title="22,7 %"></i><i style="width:12.7%;--c:#e6e64d" title="12,7 %"></i><i style="width:6.3%;--c:#ffe6a6" title="6,3 %"></i><i style="width:7.6%;--c:#4dff00" title="7,6 %"></i><i style="width:2.1%;--c:#cc4df2" title="2,1 %"></i><i style="width:1.3%;--c:#f2a64d" title="1,3 %"></i>
+        </div>
+        <ul class="legend two">
+          <li><i style="--c:#ffe64d"></i><span data-i18n="g4.a">Teren arabil</span><b>47 %</b></li>
+          <li><i style="--c:#e6004d"></i><span data-i18n="g4.b">Țesut urban discontinuu</span><b>23 %</b></li>
+          <li><i style="--c:#e6e64d"></i><span data-i18n="g4.c">Pășuni</span><b>13 %</b></li>
+          <li><i style="--c:#4dff00"></i><span data-i18n="g4.d">Păduri și arbuști</span><b>8 %</b></li>
+          <li><i style="--c:#ffe6a6"></i><span data-i18n="g4.e">Culturi complexe</span><b>6 %</b></li>
+          <li><i style="--c:#cc4df2"></i><span data-i18n="g4.f">Industrial / comercial</span><b>2 %</b></li>
+          <li><i style="--c:#f2a64d"></i><span data-i18n="g4.g">Livezi</span><b>1 %</b></li>
+        </ul>
+        <figcaption data-i18n="g4.src">Sursa: Copernicus CORINE Land Cover, decupat pe AOI (culorile oficiale CLC).</figcaption>
+      </figure>
+    </div>
+
+    <!-- cronologie: distributia temporala -->
+    <div class="head reveal" style="margin-top:72px">
+      <h2 data-i18n="t.h">Cronologie. <span>De la 1518 până azi.</span></h2>
+      <div class="accent-line"></div>
+    </div>
+    <div class="timeline-wrap">
+      <ol class="timeline">
+        <li class="reveal"><b>1518</b><p data-i18n="t.1518">Anul întemeierii satului Bubuieci.</p></li>
+        <li class="reveal"><b>1941–1945</b><p data-i18n="t.1941">Eroii satului căzuți în al Doilea Război Mondial, comemorați astăzi de monumentul din centru.</p></li>
+        <li class="reveal"><b>2008</b><p data-i18n="t.2008">Primele modificări înregistrate în setul de date cadastrale al sectorului 0142.</p></li>
+        <li class="reveal"><b>2011–2013</b><p data-i18n="t.2011">Primele fotografii libere ale satului (Panoramio, astăzi pe Wikimedia Commons).</p></li>
+        <li class="reveal"><b>2018</b><p data-i18n="t.2018">Salt al înregistrărilor cadastrale: de la 24 la 83 pe an.</p></li>
+        <li class="reveal"><b>2025</b><p data-i18n="t.2025">Record: 159 de clădiri cu modificări înregistrate într-un singur an.</p></li>
+        <li class="reveal"><b>2026</b><p data-i18n="t.2026">Acest proiect: date OSM, cadastru, hărți tematice și acest portal.</p></li>
+      </ol>
+      <figure class="chart reveal">
+        <h3 data-i18n="g5.t">Ritmul construcțiilor</h3>
+        <p class="sub" data-i18n="g5.sub">Clădiri după anul ultimei modificări în registrul cadastral</p>
+        <div class="cols" role="img" aria-label="2008: 23, 2011: 68, 2017: 24, 2018: 83, 2021: 89, 2023: 100, 2024: 105, 2025: 159">
+          <div style="--h:14.5%" data-v="23"><span>08</span></div><div style="--h:3.8%" data-v="6"><span>09</span></div><div style="--h:1.3%" data-v="2"><span>10</span></div><div style="--h:42.8%" data-v="68"><span>11</span></div><div style="--h:6.9%" data-v="11"><span>12</span></div><div style="--h:15.1%" data-v="24"><span>13</span></div><div style="--h:8.2%" data-v="13"><span>14</span></div><div style="--h:6.3%" data-v="10"><span>15</span></div><div style="--h:3.1%" data-v="5"><span>16</span></div><div style="--h:15.1%" data-v="24"><span>17</span></div><div style="--h:52.2%" data-v="83"><span>18</span></div><div style="--h:56%" data-v="89"><span>19</span></div><div style="--h:28.9%" data-v="46"><span>20</span></div><div style="--h:56%" data-v="89"><span>21</span></div><div style="--h:56%" data-v="89"><span>22</span></div><div style="--h:62.9%" data-v="100"><span>23</span></div><div style="--h:66%" data-v="105"><span>24</span></div><div class="hi" style="--h:100%" data-v="159"><span>25</span></div>
+        </div>
+        <figcaption data-i18n="g5.src">Sursa: cadastrul, sectorul 0142 — 946 de clădiri au data modificării completată (2008–2025). Anul 1518: Wikipedia.</figcaption>
+      </figure>
+    </div>
+
+    <div class="head reveal" style="margin-top:72px">
       <h2 data-i18n="concl.h">Concluzii. <span>Ce ne spun hărțile.</span></h2>
     </div>
     <div class="conclusions">
@@ -206,6 +336,33 @@
       <div class="reveal"><p data-i18n="concl.3"><strong>Serviciile sunt concentrate în centru</strong>, iar marginile satului depind de transportul public.</p></div>
       <div class="reveal"><p data-i18n="concl.4"><strong>Datele deschise nu sunt suficiente:</strong> OSM acoperă doar 15 % din clădiri — combinarea cu cadastrul este esențială.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE FOTO ============ -->
+<section class="block alt" id="galerie">
+  <div class="wrap">
+    <div class="row-head">
+      <div class="head reveal">
+        <h2 data-i18n="gal.h">Bubuieci în imagini. <span>Fotografii libere.</span></h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="arrows">
+        <button type="button" data-scroll="-1" data-target="gallery" aria-label="Înapoi">‹</button>
+        <button type="button" data-scroll="1" data-target="gallery" aria-label="Înainte">›</button>
+      </div>
+    </div>
+    <div class="scroller gallery" id="gallery">
+      <figure class="ph" data-full="assets/foto/primaria.jpg" data-cap="ph.primaria"><img src="assets/foto/primaria.jpg" alt="Primăria comunei Bubuieci" loading="lazy"><figcaption data-i18n="ph.primaria">Primăria comunei Bubuieci, 2025 · Foto: VictorCiobanu, CC0</figcaption></figure>
+      <figure class="ph" data-full="assets/foto/biserica_adormirea.jpg" data-cap="ph.adormirea"><img src="assets/foto/biserica_adormirea.jpg" alt="Biserica Adormirea Maicii Domnului" loading="lazy"><figcaption data-i18n="ph.adormirea">Biserica „Adormirea Maicii Domnului”, 2025 · Foto: VictorCiobanu, CC0</figcaption></figure>
+      <figure class="ph" data-full="assets/foto/monument.jpg" data-cap="ph.monument"><img src="assets/foto/monument.jpg" alt="Monumentul eroilor celui de-al Doilea Război Mondial" loading="lazy"><figcaption data-i18n="ph.monument">Monumentul eroilor celui de-al Doilea Război Mondial, 2025 · Foto: VictorCiobanu, CC0</figcaption></figure>
+      <figure class="ph" data-full="assets/foto/biserica_sf_treime.jpg" data-cap="ph.treime"><img src="assets/foto/biserica_sf_treime.jpg" alt="Biserica Sfânta Treime" loading="lazy"><figcaption data-i18n="ph.treime">Biserica „Sfânta Treime”, 2025 · Foto: VictorCiobanu, CC0</figcaption></figure>
+      <figure class="ph" data-full="assets/foto/strada_bubuiog.jpg" data-cap="ph.strada"><img src="assets/foto/strada_bubuiog.jpg" alt="Strada Toader Bubuiog" loading="lazy"><figcaption data-i18n="ph.strada">Strada Toader Bubuiog, aprilie 2021 · Foto: Gikü, CC0</figcaption></figure>
+      <figure class="ph" data-full="assets/foto/centru.jpg" data-cap="ph.centru"><img src="assets/foto/centru.jpg" alt="Centrul satului" loading="lazy"><figcaption data-i18n="ph.centru">Centrul comercial al satului, 2011 · Foto: Alexander Murvanidze, CC BY-SA 3.0</figcaption></figure>
+      <figure class="ph" data-full="assets/foto/camp_combina.jpg" data-cap="ph.camp"><img src="assets/foto/camp_combina.jpg" alt="Câmp agricol" loading="lazy"><figcaption data-i18n="ph.camp">Câmp agricol la marginea satului, 2011 · Foto: Alexander Murvanidze, CC BY-SA 3.0</figcaption></figure>
+      <figure class="ph" data-full="assets/foto/drum_linie_electrica.jpg" data-cap="ph.drum"><img src="assets/foto/drum_linie_electrica.jpg" alt="Drum cu linie electrică" loading="lazy"><figcaption data-i18n="ph.drum">Drum și linie electrică spre câmpuri, 2011 · Foto: Alexander Murvanidze, CC BY-SA 3.0</figcaption></figure>
+    </div>
+    <p class="source" data-i18n="gal.src">Toate fotografiile provin de pe Wikimedia Commons, cu licențe libere (CC0 și CC BY-SA 3.0). Click pe o fotografie pentru a o mări.</p>
   </div>
 </section>
 
@@ -242,11 +399,11 @@
   </div>
 </section>
 
-<!-- ============ DATE DESCARCABILE ============ -->
-<section class="block alt" id="date">
+<!-- ============ DESCARCA FISIERE ============ -->
+<section class="block alt" id="descarca">
   <div class="wrap">
     <div class="head reveal">
-      <h2 data-i18n="dl.h">Hărți tematice. <span>Descarcă și folosește.</span></h2>
+      <h2 data-i18n="dl.h">Descarcă fișiere. <span>Hărțile tematice.</span></h2>
       <div class="accent-line"></div>
       <p data-i18n="dl.p">Format A4, 200 dpi, cu toate elementele hărții: titlu, legendă, scară, orientare, surse și proiecție (MOLDREF99 / TM Moldova).</p>
     </div>
@@ -260,17 +417,17 @@
   </div>
 </section>
 
-<!-- ============ LUCRARI (ca "Ultimele noutati" INDS) ============ -->
-<section class="block" id="lucrari">
+<!-- ============ PROIECTE (ca "Ultimele noutati" INDS) ============ -->
+<section class="block" id="proiecte">
   <div class="wrap">
     <div class="row-head">
       <div class="head reveal">
-        <h2 data-i18n="labs.h">Jurnalul proiectului. <span>Șapte lucrări PBL.</span></h2>
+        <h2 data-i18n="labs.h">Proiecte. <span>Șapte lucrări PBL.</span></h2>
         <div class="accent-line"></div>
       </div>
       <div class="arrows">
-        <button type="button" data-scroll="-1" aria-label="Înapoi">‹</button>
-        <button type="button" data-scroll="1" aria-label="Înainte">›</button>
+        <button type="button" data-scroll="-1" data-target="scroller" aria-label="Înapoi">‹</button>
+        <button type="button" data-scroll="1" data-target="scroller" aria-label="Înainte">›</button>
       </div>
     </div>
     <div class="scroller" id="scroller">
@@ -278,7 +435,7 @@
       <div class="lab"><span class="n">02</span><span class="badge done" data-i18n="st.done">Finalizat</span><h3 data-i18n="l2.t">Delimitarea zonei de studiu</h3><p data-i18n="l2.d">Limita AOI a satului și explorarea serviciilor WMS ale INDS (ortofoto geodata.gov.md).</p></div>
       <div class="lab"><span class="n">03</span><span class="badge done" data-i18n="st.done">Finalizat</span><h3 data-i18n="l3.t">Descărcarea și pregătirea datelor</h3><p data-i18n="l3.d">Nouă seturi OSM prin Overpass, date cadastrale în MOLDREF99, decupare pe AOI și stilizare automată cu scripturi PyQGIS.</p></div>
       <div class="lab"><span class="n">04</span><span class="badge done" data-i18n="st.done">Finalizat</span><h3 data-i18n="l4.t">Publicarea pe web</h3><p data-i18n="l4.d">Harta publicată pe QGIS Cloud (WMS/WFS) și exportată cu qgis2web în Leaflet, găzduită pe GitHub Pages.</p></div>
-      <div class="lab"><span class="n">05</span><span class="badge now" data-i18n="st.now">În lucru</span><h3 data-i18n="l5.t">Storytelling WebGIS</h3><p data-i18n="l5.d">Cinci hărți tematice, povestea satului și acest portal.</p></div>
+      <div class="lab"><span class="n">05</span><span class="badge now" data-i18n="st.now">În lucru</span><h3 data-i18n="l5.t">Storytelling WebGIS</h3><p data-i18n="l5.d">Cinci hărți tematice, grafice, cronologie, galerie foto și acest portal.</p></div>
       <div class="lab"><span class="n">06</span><span class="badge next" data-i18n="st.next">Urmează</span><h3 data-i18n="l6.t">GitHub, VS Code și Live Server</h3><p data-i18n="l6.d">Instrumentele de dezvoltare pentru infrastructura WebGIS și distribuirea datelor pe portal.</p></div>
       <div class="lab"><span class="n">07</span><span class="badge next" data-i18n="st.next">Urmează</span><h3 data-i18n="l7.t">GeoServer: WMS și WFS</h3><p data-i18n="l7.d">Publicarea datelor AOI ca servicii OGC standard.</p></div>
     </div>
@@ -298,7 +455,7 @@
       <a class="link reveal" href="https://agcc.gov.md/" target="_blank" rel="noopener"><b>AGCC</b><span data-i18n="lk.agcc">Agenția Geodezie, Cartografie și Cadastru.</span><i>agcc.gov.md ↗</i></a>
       <a class="link reveal" href="https://www.openstreetmap.org/" target="_blank" rel="noopener"><b>OpenStreetMap</b><span data-i18n="lk.osm">Harta liberă a lumii — sursa datelor deschise.</span><i>openstreetmap.org ↗</i></a>
       <a class="link reveal" href="https://qgis.org/" target="_blank" rel="noopener"><b>QGIS</b><span data-i18n="lk.qgis">Programul SIG open-source în care a fost realizat proiectul.</span><i>qgis.org ↗</i></a>
-      <a class="link reveal" href="https://land.copernicus.eu/en/products/corine-land-cover" target="_blank" rel="noopener"><b>CORINE Land Cover</b><span data-i18n="lk.corine">Acoperirea terenurilor în Europa, programul Copernicus.</span><i>land.copernicus.eu ↗</i></a>
+      <a class="link reveal" href="https://commons.wikimedia.org/w/index.php?search=Bubuieci&amp;title=Special:MediaSearch&amp;type=image" target="_blank" rel="noopener"><b>Wikimedia Commons</b><span data-i18n="lk.commons">Sursa fotografiilor libere ale satului folosite pe acest site.</span><i>commons.wikimedia.org ↗</i></a>
     </div>
   </div>
 </section>
@@ -321,13 +478,13 @@
   <div class="wrap">
     <p data-i18n="ft.author">Autor: <strong>Iftodii Eduard</strong>, gr. IGC-223 F/R · Coordonator: conf. univ. dr. <strong>Sîrbu Rodica</strong></p>
     <p class="right" data-i18n="ft.uni">Universitatea Tehnică a Moldovei · Facultatea Construcții, Geodezie și Cadastru · 2026</p>
-    <p data-i18n="ft.src">Surse: © OpenStreetMap contributors · date cadastrale, sectorul 0142 · Copernicus CORINE Land Cover · INDS / geodata.gov.md</p>
+    <p data-i18n="ft.src">Date: © OpenStreetMap contributors · cadastrul, sectorul 0142 · Copernicus CORINE Land Cover · INDS / geodata.gov.md · Fotografii: Wikimedia Commons (VictorCiobanu, Gikü — CC0; Alexander Murvanidze — CC BY-SA 3.0)</p>
     <p class="right" data-i18n="ft.tech">Realizat cu QGIS, qgis2web, Leaflet și GitHub Pages</p>
   </div>
 </footer>
 
-<!-- lightbox pentru harti -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Hartă">
+<!-- lightbox pentru harti si fotografii -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagine mărită">
   <button class="x" type="button" aria-label="Închide">✕</button>
   <figure>
     <img alt="">
