@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hărți tematice — WebGIS Bubuieci</title>
+  <meta name="description" content="Hărți interactive tematice ale satului Bubuieci: localizare, utilizarea terenurilor, fondul construit, servicii și infrastructură.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230071e3'/%3E%3Cpath d='M16 7c-3.6 0-6.5 2.8-6.5 6.3 0 4.7 6.5 11.7 6.5 11.7s6.5-7 6.5-11.7C22.5 9.8 19.6 7 16 7zm0 8.8a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../harta/css/leaflet.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="map" aria-label="Hartă interactivă"></div>
+
+  <aside class="panel" id="panel">
+    <header class="p-head">
+      <a class="back" id="back" href="../">‹ WebGIS Bubuieci</a>
+      <div class="p-title">
+        <h1 id="title"></h1>
+        <button class="collapse" id="collapse" type="button" aria-expanded="true" aria-controls="p-body">
+          <span id="collapse-lbl"></span>
+        </button>
+      </div>
+      <p id="subtitle"></p>
+    </header>
+    <div class="p-body" id="p-body">
+      <nav class="themes" id="themes" aria-label="Teme"></nav>
+      <div id="filters"></div>
+      <div class="legend" id="legend"></div>
+      <div class="base" role="group" id="base"></div>
+      <p class="src" id="src"></p>
+    </div>
+  </aside>
+
+  <a class="full" id="full" target="_blank" rel="noopener"></a>
+  <div class="loading" id="loading"><span class="spin"></span><span id="loading-lbl"></span></div>
+
+  <script src="../harta/js/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
